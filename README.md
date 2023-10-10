@@ -12,5 +12,5 @@ $ pip3 install -r requirements.txt
 Now to run the training code for classification, execute
 
 ``` bash
-$ python3 bert_siamese.py -num_labels 
+$ python3 bert_siamese.py -2
 ```
