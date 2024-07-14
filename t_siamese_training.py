@@ -135,7 +135,7 @@ model = BigBirdSiameseNetwork('google/bigbird-roberta-base')
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 model.to(device)
 optimizer = torch.optim.Adam(model.parameters(), lr=2e-5)
-criterion = TripletLoss(margin=1.0)
+criterion = TripletLoss(margin=0.6)
 
 # Early Stopping parameters
 patience = 3
